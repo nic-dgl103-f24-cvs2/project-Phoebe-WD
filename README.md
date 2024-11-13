@@ -157,6 +157,8 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
   - Copyright
   - Education Purposes: “Created for educational purposes”
 
+---
+
 #### Our Services Page
 
 - **Header**: Same as on the Home Page
@@ -183,6 +185,8 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 - **Call to action**: Same as on the Home Page
 - **Footer**: Same as on the Home Page
 
+---
+
 #### Our Team Page
 
 - **Header**: Same as on the Home Page
@@ -200,6 +204,8 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 - **Expert Section**: Same as on Home Page
 - **Call to action**: Same as on the Home Page
 - **Footer**: Same as on the Home Page
+
+---
 
 #### Facilities & Success Stories Page
 
@@ -221,6 +227,8 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 - **Testimonials Section**: Same as on Home Page
 - **Call to action**: Same as on the Home Page
 - **Footer**: Same as on the Home Page
+
+---
 
 #### Make an Appointment Page
 
