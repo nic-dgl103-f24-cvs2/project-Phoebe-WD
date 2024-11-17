@@ -64,9 +64,9 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 
 #### Inspiration
 1. [Clinica Talus](https://www.clinicatalus.cl/)
-![Clinica Talus](https://cdn.discordapp.com/attachments/218940816582901760/1306081497060610059/image.png?ex=67355eae&is=67340d2e&hm=4b7c67638185b8e15883f03e6880e7211b57241a756b0527821165be6fb0469f&)
+![Clinica Talus](https://i.imgur.com/ktkSKAS.png)
 2. [Hinge Health](https://www.hingehealth.com/)
-![Hinge Health](https://cdn.discordapp.com/attachments/218940816582901760/1306081496678793309/image.png?ex=67355eae&is=67340d2e&hm=0c2a13ca505134023d3d633d6c777b8f1f5973dd676dabf6a26343507b054ad5&)
+![Hinge Health](https://i.imgur.com/HTtgr6B.png)
 #### Colors
 - **Primary**: Dark Green (`#1C5F5F`) - Used in key sections and elements that draw the user's attention to important actions, aligning with the theme of health and wellness to convey trust and professionalism.
 - **Neutral**: Light bluish-gray (`#DCE6E7`) - Used as a background in various content sections, creating a welcoming and clean atmosphere that allows the content to stand out without visual overload.
