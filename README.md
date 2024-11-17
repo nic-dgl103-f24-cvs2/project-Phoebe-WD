@@ -64,7 +64,7 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 
 #### Inspiration
 1. [Clinica Talus](https://www.clinicatalus.cl/)
-![Clinica Talus](https://i.imgur.com/ktkSKAS.png)
+![Clinica Talus](https://i.imgur.com/vOhG1BT.png)
 2. [Hinge Health](https://www.hingehealth.com/)
 ![Hinge Health](https://i.imgur.com/HTtgr6B.png)
 #### Colors
