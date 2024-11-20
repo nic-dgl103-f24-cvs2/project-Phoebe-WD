@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin   : 0;
     font-family: "Open Sans",
         serif;
@@ -37,7 +37,7 @@ ul {
 /*-------- UTILITY ---------*/
 
 .content-width {
-    width : 334px;
+    width : 90%;
     margin: auto;
 }
 
@@ -47,7 +47,9 @@ header {
     display    : flex;
     flex-flow  : row nowrap;
     align-items: center;
-    padding    : 1rem;
+    width      : 90%;
+    margin     : auto;
+    padding    : 2rem 0;
 }
 
 .logo-header {
@@ -86,7 +88,6 @@ nav ul li a {
     text-decoration: none;
     font-size      : 1.5rem;
     font-weight    : 500;
-    line-height    : 1.3rem;
     color          : #000;
 }
 
@@ -110,6 +111,76 @@ nav ul li a {
     font-size: 3rem;
     cursor   : pointer;
     color    : #1C5F5F;
+}
+
+/*-------- BEST SELF ---------*/
+
+h1 {
+    font-size  : 3.6rem;
+    font-weight: 500;
+}
+
+h1 span {
+    color: #1C5F5F;
+}
+
+.best-self img {
+    border-radius: 10px;
+}
+
+.best-self__first-container,
+.consult-buttons,
+.consult-list {
+    margin-bottom: 2rem;
+}
+
+.best-self__first-container p {
+    font-size : 1.6rem;
+    text-align: justify;
+}
+
+.consult-buttons {
+    display        : flex;
+    flex-flow      : row nowrap;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.consult-btn,
+.services-btn {
+    font-size: 1.6rem;
+}
+
+.consult-btn {
+    background-color: #1C5F5F;
+    color           : #fff;
+    border-radius   : 5px;
+    padding         : 1rem 2rem;
+    text-decoration : none;
+    text-transform  : capitalize;
+}
+
+.services-btn {
+    color          : #000;
+    text-decoration: none;
+    text-transform : capitalize;
+}
+
+.consult-list ul {
+    display        : flex;
+    flex-flow      : row nowrap;
+    align-items    : center;
+    justify-content: space-between;
+    text-align     : center;
+}
+
+.consult-list ul p strong {
+    font-size: 1.8rem;
+}
+
+.consult-list ul p {
+    font-size: 1.6rem;
+    margin   : 0;
 }
 
 /*-------- CALL TO ACTION ---------*/
@@ -178,6 +249,8 @@ nav ul li a {
 /*-------- FOOTER---------*/
 
 footer {
+    width  : 90%;
+    margin : auto;
     padding: 1rem;
 }
 
@@ -249,7 +322,8 @@ footer input {
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
     .content-width {
-        width: 85%;
+        width        : 85%;
+        margin-bottom: 2rem;
     }
 
     /*-------- HEADER ---------*/
@@ -276,11 +350,10 @@ footer input {
     .nav-desktop ul li {
         display    : flex;
         align-items: center;
-        padding    : 1rem;
     }
 
     .nav-desktop ul li a {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .appointment-btn {
@@ -301,6 +374,64 @@ footer input {
         display: none;
     }
 
+    /*-------- BEST SELF ---------*/
+
+    h1 {
+        font-size    : 4.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .best-self__first-container p {
+        font-size    : 2rem;
+        margin-bottom: 0;
+    }
+
+    .best-self__first-container,
+    .best-self__second-container {
+        display        : flex;
+        flex-flow      : row nowrap;
+        gap            : 2rem;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    .best-self__first-container div,
+    .best-self__first-container img,
+    .free-consult__container,
+    .physio__container {
+        width: 50%;
+    }
+
+    .consult-btn,
+    .services-btn {
+        font-size: 2.5rem;
+    }
+
+    .consult-buttons,
+    .consult-list {
+        width: 90%;
+    }
+
+    .consult-list ul p strong {
+        font-size: 4rem;
+    }
+
+    .consult-list ul p {
+        font-size: 2rem;
+        margin   : 0;
+    }
+
+    .physio__container {
+        display    : flex;
+        flex-flow  : row nowrap;
+        align-items: center;
+        gap        : .5rem;
+    }
+
+    .physio__container img {
+        width: 50%;
+    }
+
     /*-------- CALL TO ACTION ---------*/
 
     .call-to-action .content-width {
@@ -308,6 +439,7 @@ footer input {
         flex-flow      : row nowrap;
         align-items    : center;
         justify-content: space-between;
+        margin-bottom  : 0;
     }
 
     .call-to-action img {
