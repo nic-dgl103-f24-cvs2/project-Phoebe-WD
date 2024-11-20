@@ -216,9 +216,10 @@ h1 span {
 }
 
 .background-experts img {
-    position : relative;
-    z-index  : 2;
-    max-width: 100%;
+    position  : relative;
+    z-index   : 2;
+    max-width : 100%;
+    align-self: flex-end;
 }
 
 .features__container {
@@ -436,6 +437,7 @@ footer form {
     flex-flow    : row nowrap;
     align-items  : center;
     gap          : 5px;
+    margin       : auto;
     margin-bottom: 2rem;
 }
 
@@ -626,50 +628,22 @@ footer input {
     }
 
     /*-------- THERAPY SERVICES ---------*/
-    .services-grid {
-        display              : grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap                  : 1.5rem;
-    }
 
-    .service-card {
-        background-color: #e0f0f3;
-        padding         : 1.5rem;
-        border-radius   : 10px;
-        position        : relative;
-        display         : flex;
-        flex-direction  : column;
-        justify-content : space-between;
+    .therapy-header h2 {
+        font-size  : 3rem;
+        font-weight: 500;
     }
 
     .service-card h3 {
-        font-size    : 2rem;
-        margin-bottom: 0.5rem;
-        margin-top   : 0;
+        font-size: 2.3rem;
     }
 
     .service-card p {
-        margin: 0;
-    }
-
-    .service-card .icon-circle {
-        background-color: #19584d;
-        width           : 40px;
-        height          : 40px;
-        border-radius   : 50%;
-        display         : flex;
-        align-items     : center;
-        justify-content : center;
-
-        position       : absolute;
-        top            : 1rem;
-        right          : 1rem;
-        text-decoration: none;
+        font-size: 1.4rem;
     }
 
     .service-card .icon-circle i {
-        font-size: 1.2rem;
-        color    : #fff;
+        font-size: 1.4rem;
     }
 
     /*-------- CALL TO ACTION ---------*/
@@ -700,6 +674,10 @@ footer input {
         width  : 85%;
         margin : auto;
         padding: 3rem 1rem;
+    }
+
+    footer form {
+        width: 80%;
     }
 
     .footer__first-container {
