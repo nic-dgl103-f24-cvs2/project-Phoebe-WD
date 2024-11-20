@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities &amp; Stories | Ascent Physiotherapy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo-header"
+        src="./assets/ascent-logo.svg"
+        alt="Ascent Physiotherapy Logo"
+      />
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./our-services.html">Our Services</a></li>
+          <li><a href="./our-team.html">Our Team</a></li>
+          <li>
+            <a href="./facilities-stories.html"
+              >Facilities &amp; Success Stories</a
+            >
+          </li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+          <li class="appointment-btn">
+            <a href="https://ascentphysiotherapy.janeapp.com/" target="_blank">
+              <i class="fa fa-calendar"></i>
+              Make an Appointment</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav-mobile">
+        <a class="toggle" onclick="showNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <ul id="nav-items">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./our-services.html">Our Services</a></li>
+          <li><a href="./our-team.html">Our Team</a></li>
+          <li>
+            <a href="./facilities-stories.html"
+              >Facilities &amp; Success Stories</a
+            >
+          </li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+          <li>
+            <a href="https://ascentphysiotherapy.janeapp.com/" target="_blank">
+              <i class="fa fa-calendar"></i>
+              Make an Appointment</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="call-to-action">
+        <div class="content-width">
+          <img
+            src="./assets/ascent-logo-white.svg"
+            alt="Ascent Physiotherapy Logo White"
+            width="120"
+          />
+          <div class="call-us contact-info">
+            <a
+              href="tel:+2362222222"
+              class="icon-circle phone"
+              aria-label="Call Ascent Physiotherapy"
+            >
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <div>
+              <p>Call us</p>
+              <a href="tel:+2362222222">(236) 222 2222</a>
+            </div>
+          </div>
+          <div class="visit-us contact-info">
+            <a
+              href="./contact-us.html"
+              class="icon-circle map"
+              aria-label="Visit Ascent Physiotherapy"
+            >
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+            <div>
+              <p>Visit us</p>
+              <a href="./contact-us.html"
+                >141A Nordin Street Comox, BC, Canada V9M 3N5</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__first-container">
+        <nav class="footer__nav-navigate">
+          <p><strong>Navigate</strong></p>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./our-services.html">Our Services</a></li>
+            <li><a href="./our-team.html">Our Team</a></li>
+            <li>
+              <a href="./facilities-stories.html"
+                >Facilities &amp; Success Stories</a
+              >
+            </li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav-weblinks">
+          <p><strong>Weblinks</strong></p>
+          <ul>
+            <li><a href="">WorkSafeBC</a></li>
+            <li><a href="">CGIMS</a></li>
+            <li><a href="">College of Physical Therapists of BC</a></li>
+          </ul>
+        </nav>
+        <div class="footer__form-container">
+          <img
+            class="logo-footer"
+            src="./assets/ascent-logo.svg"
+            alt="Ascent Physiotherapy Logo  Footer"
+          />
+          <p>Don't miss the opportunity to stay informed and inspired.</p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>&copy; 2024 Ascent Physiotherapy. Non rights reserved.</p>
+        <p>
+          This is a fictional website that was designed and coded as an
+          educational excercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
+      </div>
+    </footer>
+    <script>
+      function showNav() {
+        const element = document.getElementById("nav-items");
+        if (element) {
+          element.classList.toggle("show-items");
+        } else {
+          console.error("Element with id 'nav-items' not found.");
+        }
+      }
+    </script>
+  </body>
+</html>
