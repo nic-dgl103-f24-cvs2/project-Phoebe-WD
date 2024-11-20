@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascent Physiotherapy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;700;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo-header"
+        src="./assets/ascent-logo.svg"
+        alt="Ascent Physiotherapy Logo"
+      />
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#best-self">Home</a></li>
+          <li><a href="#best-self">Our Services</a></li>
+          <li><a href="#our-expert">Our Team</a></li>
+          <li><a href="#therapies">Facilities &amp; Success Stories</a></li>
+          <li><a href="#testimonials">Contact Us</a></li>
+          <li class="appointment-btn">
+            <a href="https://ascentphysiotherapy.janeapp.com/" target="_blank">
+              <i class="fa fa-calendar"></i>
+              Make an Appointment</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav-mobile">
+        <a class="toggle" onclick="showNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <ul id="nav-items">
+          <li><a href="#best-self">Home</a></li>
+          <li><a href="#best-self">Our Services</a></li>
+          <li><a href="#our-expert">Our Team</a></li>
+          <li><a href="#therapies">Facilities &amp; Success Stories</a></li>
+          <li><a href="#testimonials">Contact Us</a></li>
+          <li>
+            <a href="https://ascentphysiotherapy.janeapp.com/" target="_blank">
+              <i class="fa fa-calendar"></i>
+              Make an Appointment</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content-width">
+      <section class="best-self"></section>
+      <section class="our-expert"></section>
+      <section class="therapies"></section>
+      <section class="testimonials"></section>
+      <section class="call-to-action"></section>
+    </main>
+    <footer></footer>
+    <script>
+      function showNav() {
+        const element = document.getElementById("nav-items");
+        if (element) {
+          element.classList.toggle("show-items");
+        } else {
+          console.error("Element with id 'nav-items' not found.");
+        }
+      }
+    </script>
+  </body>
+</html>
