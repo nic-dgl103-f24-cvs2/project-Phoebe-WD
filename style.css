@@ -221,10 +221,21 @@ h1 span {
     max-width: 100%;
 }
 
+.features__container {
+    padding-bottom: 2rem;
+}
+
 .features__container h2 {
     font-weight   : 500;
     font-size     : 3rem;
     text-transform: capitalize;
+}
+
+.features__container .consult-btn {
+    margin-top   : 2rem;
+    border-radius: 10px;
+    display      : block;
+    width        : fit-content;
 }
 
 .features__text p {
@@ -232,46 +243,95 @@ h1 span {
 }
 
 .features {
-    display        : flex;
-    justify-content: space-between;
-    flex-wrap      : wrap;
-    gap            : 20px;
-    padding        : 20px;
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap                  : 2rem;
+    margin-top           : 2rem;
+    padding              : 0 1rem;
 }
 
-.features ul {
-    list-style: none;
-    padding   : 0;
-    margin    : 0;
-    display   : flex;
-    flex-flow : row wrap;
-    gap       : 40px;
+.feature-item {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    gap           : 1rem;
+    text-align    : left;
 }
 
-.features li {
-    display    : flex;
-    flex-flow  : row nowrap;
-    align-items: center;
-    gap        : 10px;
-}
 
-.icon {
+.feature-icon {
+    background-color: #1C5F5F;
     width           : 50px;
     height          : 50px;
     border-radius   : 50%;
-    background-color: #1C5F5F;
     display         : flex;
     align-items     : center;
     justify-content : center;
+    flex-shrink     : 0;
 }
 
-.icon i {
-    font-size: 3rem;
+.feature-icon i {
+    font-size: 2rem;
     color    : #fff;
 }
 
 .features p {
     margin: 0;
+}
+
+/*-------- THERAPY SERVICES ---------*/
+
+.therapies {
+    margin-bottom: 2rem;
+}
+
+.therapy-header p {
+    text-align: justify;
+}
+
+.services-grid {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap                  : 1.5rem;
+}
+
+.service-card {
+    background-color: #e0f0f3;
+    padding         : 1.5rem;
+    border-radius   : 10px;
+    position        : relative;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+}
+
+.service-card h3 {
+    font-size    : 2rem;
+    margin-bottom: 0.5rem;
+    margin-top   : 0;
+}
+
+.service-card p {
+    margin: 0;
+}
+
+.service-card .icon-circle {
+    background-color: #19584d;
+    width           : 40px;
+    height          : 40px;
+    border-radius   : 50%;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    position        : absolute;
+    top             : 1rem;
+    right           : 1rem;
+    text-decoration : none;
+}
+
+.service-card .icon-circle i {
+    font-size: 1.2rem;
+    color    : #fff;
 }
 
 /*-------- CALL TO ACTION ---------*/
@@ -548,20 +608,68 @@ footer input {
         width          : 50%;
         display        : flex;
         flex-flow      : column nowrap;
-        align-items    : center;
+        align-items    : flex-start;
         justify-content: center;
     }
 
     .features {
-        padding: 0;
-    }
-
-    .features ul {
-        justify-content: space-between;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        gap                  : 2rem;
     }
 
     .features p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+
+    .feature-icon i {
+        font-size: 2.5rem;
+    }
+
+    /*-------- THERAPY SERVICES ---------*/
+    .services-grid {
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap                  : 1.5rem;
+    }
+
+    .service-card {
+        background-color: #e0f0f3;
+        padding         : 1.5rem;
+        border-radius   : 10px;
+        position        : relative;
+        display         : flex;
+        flex-direction  : column;
+        justify-content : space-between;
+    }
+
+    .service-card h3 {
+        font-size    : 2rem;
+        margin-bottom: 0.5rem;
+        margin-top   : 0;
+    }
+
+    .service-card p {
+        margin: 0;
+    }
+
+    .service-card .icon-circle {
+        background-color: #19584d;
+        width           : 40px;
+        height          : 40px;
+        border-radius   : 50%;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+
+        position       : absolute;
+        top            : 1rem;
+        right          : 1rem;
+        text-decoration: none;
+    }
+
+    .service-card .icon-circle i {
+        font-size: 1.2rem;
+        color    : #fff;
     }
 
     /*-------- CALL TO ACTION ---------*/
