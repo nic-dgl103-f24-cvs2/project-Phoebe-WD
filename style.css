@@ -49,6 +49,7 @@ ul {
     margin: auto;
 }
 
+/*!-------- GENERAL STYLES ---------*/
 /*-------- HEADER ---------*/
 
 header {
@@ -90,7 +91,7 @@ header {
     border-bottom: none;
 }
 
-nav ul li a {
+header nav ul li a {
     padding        : 1rem 2rem;
     margin         : 0;
     text-decoration: none;
@@ -121,14 +122,99 @@ nav ul li a {
     color    : #1C5F5F;
 }
 
+/*-------- FOOTER---------*/
+
+footer {
+    width  : 90%;
+    margin : auto;
+    padding: 1rem;
+}
+
+.logo-footer {
+    display: block;
+    width  : 80%;
+    margin : auto;
+}
+
+footer nav ul {
+    text-align: center;
+}
+
+footer nav ul li {
+    margin-bottom: .8rem;
+}
+
+footer nav ul li a {
+    font-size      : 1.8rem;
+    font-weight    : 300;
+    text-decoration: underline;
+    color          : #000;
+}
+
+footer nav p {
+    text-align: center;
+    font-size : 2rem;
+}
+
+.footer__nav-weblinks {
+    margin-bottom: 2rem;
+}
+
+footer form {
+    display      : flex;
+    flex-flow    : row nowrap;
+    align-items  : center;
+    gap          : 5px;
+    margin       : auto;
+    margin-bottom: 2rem;
+}
+
+footer form button {
+    background-color: #1C5F5F;
+    color           : #fff;
+    border          : none;
+    border-radius   : 5px;
+    padding         : 1rem 2rem;
+    height          : 40px;
+    width           : 30%;
+    font-weight     : 500;
+    cursor          : pointer;
+    transition      : background-color 0.3s ease;
+}
+
+footer form button:hover {
+    background-color: #164e4e;
+}
+
+footer input {
+    width        : 70%;
+    height       : 40px;
+    border-radius: 5px;
+    border       : 1px solid #1C5F5F;
+}
+
+.footer__form-container p,
+.footer__copyright p {
+    text-align: center;
+}
+
+.footer__copyright {
+    border-top: 1px solid #000;
+}
+
+.footer__copyright p:last-child {
+    font-size: 1.2rem;
+}
+
+/*!-------- HOME PAGE ---------*/
 /*-------- BEST SELF ---------*/
 
-h1 {
+.best-self__first-container h1 {
     font-size  : 3.6rem;
     font-weight: 500;
 }
 
-h1 span {
+.best-self__first-container h1 span {
     color: #1C5F5F;
 }
 
@@ -472,7 +558,7 @@ h1 span {
     font-weight: 400;
 }
 
-/*-------- CALL TO ACTION ---------*/
+/*!-------- GENERAL CALL TO ACTION (NOT IN CONTACT US PAGE)---------*/
 .call-to-action {
     background-color: #1C5F5F;
     padding         : 2rem 1rem;
@@ -539,89 +625,6 @@ h1 span {
     color    : #1C5F5F;
 }
 
-/*-------- FOOTER---------*/
-
-footer {
-    width  : 90%;
-    margin : auto;
-    padding: 1rem;
-}
-
-.logo-footer {
-    display: block;
-    width  : 80%;
-    margin : auto;
-}
-
-footer nav ul {
-    text-align: center;
-}
-
-footer nav ul li {
-    margin-bottom: .8rem;
-}
-
-footer nav ul li a {
-    font-size      : 1.8rem;
-    font-weight    : 300;
-    text-decoration: underline;
-}
-
-footer nav p {
-    text-align: center;
-    font-size : 2rem;
-}
-
-.footer__nav-weblinks {
-    margin-bottom: 2rem;
-}
-
-footer form {
-    display      : flex;
-    flex-flow    : row nowrap;
-    align-items  : center;
-    gap          : 5px;
-    margin       : auto;
-    margin-bottom: 2rem;
-}
-
-footer form button {
-    background-color: #1C5F5F;
-    color           : #fff;
-    border          : none;
-    border-radius   : 5px;
-    padding         : 1rem 2rem;
-    height          : 40px;
-    width           : 30%;
-    font-weight     : 500;
-    cursor          : pointer;
-    transition      : background-color 0.3s ease;
-}
-
-footer form button:hover {
-    background-color: #164e4e;
-}
-
-footer input {
-    width        : 70%;
-    height       : 40px;
-    border-radius: 5px;
-    border       : 1px solid #1C5F5F;
-}
-
-.footer__form-container p,
-.footer__copyright p {
-    text-align: center;
-}
-
-.footer__copyright {
-    border-top: 1px solid #000;
-}
-
-.footer__copyright p:last-child {
-    font-size: 1.2rem;
-}
-
 /*-------- MEDIA QUERIES ---------*/
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
@@ -630,6 +633,7 @@ footer input {
         margin-bottom: 2rem;
     }
 
+    /*!-------- GENERAL STYLES ---------*/
     /*-------- HEADER ---------*/
     header {
         justify-content: space-between;
@@ -683,9 +687,28 @@ footer input {
         display: none;
     }
 
+    /*-------- FOOTER---------*/
+    footer {
+        width  : 85%;
+        margin : auto;
+        padding: 3rem 1rem;
+    }
+
+    footer form {
+        width: 80%;
+    }
+
+    .footer__first-container {
+        display        : flex;
+        flex-flow      : row nowrap;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    /*!-------- HOME PAGE ---------*/
     /*-------- BEST SELF ---------*/
 
-    h1 {
+    .best-self__first-container h1 {
         font-size    : 4.8rem;
         margin-bottom: 2rem;
     }
@@ -741,8 +764,6 @@ footer input {
     .physio__container img {
         width: 50%;
     }
-
-
 
     /*-------- OUR EXPERT ---------*/
 
@@ -834,7 +855,7 @@ footer input {
         font-size: 1.2rem;
     }
 
-    /*-------- CALL TO ACTION ---------*/
+    /*!-------- GENERAL CALL TO ACTION (NOT IN CONTACT US PAGE)---------*/
 
     .call-to-action .content-width {
         display        : flex;
@@ -859,24 +880,6 @@ footer input {
     .call-us a,
     .visit-us a {
         font-size: 1.5rem;
-    }
-
-    /*-------- FOOTER---------*/
-    footer {
-        width  : 85%;
-        margin : auto;
-        padding: 3rem 1rem;
-    }
-
-    footer form {
-        width: 80%;
-    }
-
-    .footer__first-container {
-        display        : flex;
-        flex-flow      : row nowrap;
-        align-items    : center;
-        justify-content: space-between;
     }
 
 }
