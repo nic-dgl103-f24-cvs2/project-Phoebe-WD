@@ -183,6 +183,97 @@ h1 span {
     margin   : 0;
 }
 
+/*-------- OUR EXPERT ---------*/
+.our-expert {
+    background-color: #DCE6E7;
+}
+
+.background-experts {
+    position       : relative;
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    overflow       : hidden;
+}
+
+.circle-background {
+    position        : absolute;
+    width           : 250px;
+    height          : 250px;
+    border-radius   : 50%;
+    background-color: #1C5F5F;
+    z-index         : 1;
+}
+
+.circle-outline {
+    position     : absolute;
+    width        : 325px;
+    height       : 325px;
+    border-radius: 50%;
+    border       : 2px solid #1C5F5F;
+    z-index      : 0;
+}
+
+.background-experts img {
+    position : relative;
+    z-index  : 2;
+    max-width: 100%;
+}
+
+.features__container h2 {
+    font-weight   : 500;
+    font-size     : 3rem;
+    text-transform: capitalize;
+}
+
+.features__text p {
+    text-align: justify;
+}
+
+.features {
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+    gap            : 20px;
+    padding        : 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding   : 0;
+    margin    : 0;
+    display   : flex;
+    flex-flow : row wrap;
+    gap       : 40px;
+}
+
+.features li {
+    display    : flex;
+    flex-flow  : row nowrap;
+    align-items: center;
+    gap        : 10px;
+}
+
+.icon {
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    background-color: #1C5F5F;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.icon i {
+    font-size: 3rem;
+    color    : #fff;
+}
+
+.features p {
+    margin: 0;
+}
+
 /*-------- CALL TO ACTION ---------*/
 .call-to-action {
     background-color: #1C5F5F;
@@ -199,8 +290,7 @@ h1 span {
     margin-bottom: 1rem;
 }
 
-.call-us,
-.visit-us {
+.contact-info {
     display    : flex;
     flex-flow  : row nowrap;
     align-items: center;
@@ -228,8 +318,7 @@ h1 span {
     color : #fff;
 }
 
-.map-icon,
-.telephone-icon {
+.icon-circle {
     background-color: #DCE6E7;
     width           : 50px;
     height          : 50px;
@@ -240,8 +329,7 @@ h1 span {
     text-decoration : none;
 }
 
-.map-icon i,
-.telephone-icon i {
+.icon-circle i {
     font-size: 3rem;
     color    : #1C5F5F;
 }
@@ -430,6 +518,50 @@ footer input {
 
     .physio__container img {
         width: 50%;
+    }
+
+
+
+    /*-------- OUR EXPERT ---------*/
+
+    .background-experts {
+        width: 50%;
+    }
+
+    .circle-background {
+        width : 450px;
+        height: 450px;
+    }
+
+    .circle-outline {
+        width : 550px;
+        height: 550px;
+    }
+
+    .our-expert .content-width {
+        display  : flex;
+        flex-flow: row nowrap;
+        gap      : 2rem;
+    }
+
+    .features__container {
+        width          : 50%;
+        display        : flex;
+        flex-flow      : column nowrap;
+        align-items    : center;
+        justify-content: center;
+    }
+
+    .features {
+        padding: 0;
+    }
+
+    .features ul {
+        justify-content: space-between;
+    }
+
+    .features p {
+        font-size: 1.4rem;
     }
 
     /*-------- CALL TO ACTION ---------*/
