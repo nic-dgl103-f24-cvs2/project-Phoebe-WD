@@ -1,0 +1,170 @@
+/*-------- GLOBAL STYLES ---------*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    margin   : 0;
+    font-family: "Open Sans",
+        serif;
+    font-weight: 400;
+    color      : #000;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat Alternates",
+        serif;
+}
+
+ul {
+    list-style-type: none;
+    margin         : 0;
+    padding        : 0;
+}
+
+
+/*-------- UTILITY ---------*/
+
+.content-width {
+    width : 334px;
+    margin: auto;
+}
+
+/*-------- HEADER ---------*/
+
+header {
+    display    : flex;
+    flex-flow  : row nowrap;
+    align-items: center;
+    padding    : 1rem;
+}
+
+.logo-header {
+    width: 120px;
+}
+
+.nav-desktop,
+.nav-mobile ul {
+    display: none;
+}
+
+/* Mobile Menu */
+.nav-mobile {
+    flex-grow     : 1;
+    text-align    : end;
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-end;
+    width         : 100%;
+}
+
+.nav-mobile ul li {
+    width        : 100%;
+    border-bottom: 1px solid #1C5F5F;
+    display      : flex;
+}
+
+.nav-mobile ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    padding        : 1rem 2rem;
+    margin         : 0;
+    text-decoration: none;
+    font-size      : 1.2rem;
+    font-weight    : 500;
+    line-height    : 1.3rem;
+    color          : #000;
+}
+
+.nav-mobile .show-items {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    position        : absolute;
+    top             : 40px;
+    width           : 250px;
+    right           : 0;
+    background-color: #DCE6E7;
+    text-align      : center;
+    box-shadow      : rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.toggle {
+    padding  : 0;
+    margin   : 0;
+    display  : inline;
+    font-size: 3rem;
+    cursor   : pointer;
+    color    : #1C5F5F;
+}
+
+/*-------- MEDIA QUERIES ---------*/
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+    .content-width {
+        width: 1130px;
+    }
+
+    /*-------- HEADER ---------*/
+    header {
+        justify-content: space-between;
+        width          : 85%;
+        margin         : auto;
+        padding        : 3rem 1rem;
+    }
+
+    .logo-header {
+        width: 150px;
+    }
+
+    .nav-desktop {
+        display: block;
+    }
+
+    .nav-desktop ul {
+        display: flex;
+
+    }
+
+    .nav-desktop ul li {
+        display    : flex;
+        align-items: center;
+        padding    : 1rem;
+    }
+
+    .nav-desktop ul li a {
+        font-size: 2rem;
+    }
+
+    .appointment-btn {
+        background-color: #1C5F5F;
+        border-radius   : 5px;
+    }
+
+    .appointment-btn a {
+        display    : flex;
+        align-items: center;
+        color      : #fff;
+        gap        : 1rem;
+    }
+
+    /* HIDE NAV MOBILE */
+    .nav-mobile,
+    .toggle {
+        display: none;
+    }
+}
