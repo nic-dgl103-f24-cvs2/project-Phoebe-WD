@@ -84,7 +84,7 @@ nav ul li a {
     padding        : 1rem 2rem;
     margin         : 0;
     text-decoration: none;
-    font-size      : 1.2rem;
+    font-size      : 1.5rem;
     font-weight    : 500;
     line-height    : 1.3rem;
     color          : #000;
@@ -110,6 +110,74 @@ nav ul li a {
     font-size: 3rem;
     cursor   : pointer;
     color    : #1C5F5F;
+}
+
+/*-------- FOOTER---------*/
+
+footer {
+    padding: 1rem;
+}
+
+.logo-footer {
+    display: block;
+    width  : 80%;
+    margin : auto;
+}
+
+footer nav ul {
+    text-align: center;
+}
+
+footer nav ul li {
+    margin-bottom: .8rem;
+}
+
+footer nav ul li a {
+    font-size      : 1.8rem;
+    text-decoration: underline;
+}
+
+footer nav p {
+    text-align: center;
+    font-size : 2rem;
+}
+
+.footer__nav-weblinks {
+    margin-bottom: 2rem;
+}
+
+footer form {
+    display      : flex;
+    flex-flow    : row nowrap;
+    align-items  : center;
+    gap          : 5px;
+    margin-bottom: 2rem;
+}
+
+footer form button {
+    background-color: #1C5F5F;
+    color           : #fff;
+    border          : none;
+    border-radius   : 5px;
+    padding         : 1rem 2rem;
+    height          : 40px;
+    width           : 30%;
+}
+
+footer input {
+    width        : 70%;
+    height       : 40px;
+    border-radius: 5px;
+    border       : 1px solid #1C5F5F;
+}
+
+.footer__form-container p,
+.footer__copyright p {
+    text-align: center;
+}
+
+.footer__copyright {
+    border-top: 1px solid #000;
 }
 
 /*-------- MEDIA QUERIES ---------*/
@@ -167,4 +235,19 @@ nav ul li a {
     .toggle {
         display: none;
     }
+
+    /*-------- FOOTER---------*/
+    footer {
+        width  : 85%;
+        margin : auto;
+        padding: 3rem 1rem;
+    }
+
+    .footer__first-container {
+        display        : flex;
+        flex-flow      : row nowrap;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
 }
