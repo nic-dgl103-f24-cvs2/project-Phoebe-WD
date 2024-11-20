@@ -307,13 +307,14 @@ h1 span {
 }
 
 .service-card h3 {
-    font-size    : 2rem;
+    font-size    : 2.3rem;
     margin-bottom: 0.5rem;
     margin-top   : 0;
 }
 
 .service-card p {
-    margin: 0;
+    font-size: 1.4rem;
+    margin   : 0;
 }
 
 .service-card .icon-circle {
@@ -632,14 +633,6 @@ footer input {
     .therapy-header h2 {
         font-size  : 3rem;
         font-weight: 500;
-    }
-
-    .service-card h3 {
-        font-size: 2.3rem;
-    }
-
-    .service-card p {
-        font-size: 1.4rem;
     }
 
     .service-card .icon-circle i {
