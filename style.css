@@ -175,12 +175,16 @@ h1 span {
 }
 
 .consult-list ul p strong {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 
 .consult-list ul p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin   : 0;
+}
+
+.physio__container {
+    margin-bottom: 2rem;
 }
 
 /*-------- OUR EXPERT ---------*/
@@ -284,6 +288,11 @@ h1 span {
 
 .therapies {
     margin-bottom: 2rem;
+}
+
+.therapy-header h2 {
+    font-size  : 3rem;
+    font-weight: 500;
 }
 
 .therapy-header p {
@@ -573,10 +582,11 @@ footer input {
     }
 
     .physio__container {
-        display    : flex;
-        flex-flow  : row nowrap;
-        align-items: center;
-        gap        : .5rem;
+        display      : flex;
+        flex-flow    : row nowrap;
+        align-items  : center;
+        gap          : .5rem;
+        margin-bottom: 0;
     }
 
     .physio__container img {
@@ -629,11 +639,6 @@ footer input {
     }
 
     /*-------- THERAPY SERVICES ---------*/
-
-    .therapy-header h2 {
-        font-size  : 3rem;
-        font-weight: 500;
-    }
 
     .service-card .icon-circle i {
         font-size: 1.4rem;
