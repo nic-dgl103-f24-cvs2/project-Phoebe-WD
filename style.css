@@ -1,4 +1,12 @@
 /*-------- GLOBAL STYLES ---------*/
+
+/* 
+PRIMARY COLOR:  #1C5F5F
+SECUNDARY COLOR: #DCE6E7
+TEXT COLOR: #000
+HOVER COLOR: #164e4e
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -23,8 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat Alternates",
-        serif;
+    font-family: "Montserrat",
+        sans-serif;
 }
 
 ul {
@@ -158,12 +166,22 @@ h1 span {
     padding         : 1rem 2rem;
     text-decoration : none;
     text-transform  : capitalize;
+    transition      : background-color 0.3s ease;
 }
 
 .services-btn {
     color          : #000;
     text-decoration: none;
     text-transform : capitalize;
+    transition     : text-decoration 0.3s ease;
+}
+
+.consult-btn:hover {
+    background-color: #164e4e;
+}
+
+.services-btn:hover {
+    text-decoration: underline;
 }
 
 .consult-list ul {
@@ -237,10 +255,11 @@ h1 span {
 }
 
 .features__container .consult-btn {
-    margin-top   : 2rem;
+    margin-top   : 4rem;
     border-radius: 10px;
     display      : block;
     width        : fit-content;
+    font-size    : 1.6rem;
 }
 
 .features__text p {
@@ -306,7 +325,7 @@ h1 span {
 }
 
 .service-card {
-    background-color: #e0f0f3;
+    background-color: #DCE6E7;
     padding         : 1.5rem;
     border-radius   : 10px;
     position        : relative;
@@ -327,7 +346,7 @@ h1 span {
 }
 
 .service-card .icon-circle {
-    background-color: #19584d;
+    background-color: #1C5F5F;
     width           : 40px;
     height          : 40px;
     border-radius   : 50%;
@@ -345,19 +364,130 @@ h1 span {
     color    : #fff;
 }
 
+/*-------- TESTIMONIALS ---------*/
+.testimonials {
+    padding: 1.5rem 1rem;
+}
+
+.testimonial-title h2 {
+    font-size    : 3rem;
+    font-weight  : 500;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-title p {
+    margin-bottom: 1.5rem;
+    line-height  : 1.5;
+}
+
+.testimonial-header a {
+    display         : inline-block;
+    border-radius   : 5px;
+    padding         : 1rem 2rem;
+    font-size       : 1.6rem;
+    text-decoration : none;
+    text-transform  : capitalize;
+    color           : #fff;
+    background-color: #1C5F5F;
+    margin-bottom   : 1.5rem;
+    transition      : background-color 0.3s ease;
+}
+
+.testimonial-header a:hover {
+    background-color: #164e4e;
+}
+
+.testimonial-container {
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 1.5rem;
+}
+
+.testimonial-card {
+    background-color: #DCE6E7;
+    border-radius   : 10px;
+    box-shadow      : 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding         : 1rem;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 1rem;
+    min-height      : 250px;
+}
+
+.testimonial-comment {
+    display         : flex;
+    background-color: #fff;
+    border-radius   : 5px;
+    flex-direction  : column;
+    justify-content : flex-start;
+    gap             : 2rem;
+    padding         : 1rem;
+    align-items     : flex-start;
+    flex-grow       : 1;
+}
+
+.testimonial-comment .star-icons {
+    display        : flex;
+    justify-content: start;
+    gap            : 0.5rem;
+    color          : #f4b400;
+}
+
+.testimonial-comment blockquote {
+    font-size  : 1.4rem;
+    line-height: 1.5;
+    margin     : 0;
+    font-style : italic;
+}
+
+.testimonial-user {
+    display    : flex;
+    align-items: center;
+    gap        : 1rem;
+}
+
+.user-icon {
+    background-color: #1C5F5F;
+    width           : 40px;
+    height          : 40px;
+    border-radius   : 50%;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.user-icon i {
+    font-size: 2rem;
+    color    : #fff;
+}
+
+.user-info p {
+    margin     : 0;
+    font-size  : 1.2rem;
+    font-weight: 600;
+}
+
+.user-info p:last-child {
+    font-size  : 1rem;
+    font-weight: 400;
+}
+
 /*-------- CALL TO ACTION ---------*/
 .call-to-action {
     background-color: #1C5F5F;
     padding         : 2rem 1rem;
 }
 
-.call-to-action img {
-    display      : block;
-    margin       : auto;
-    margin-bottom: 1rem;
+.call-to-action .content-width {
+    display        : flex;
+    flex-flow      : row nowrap;
+    justify-content: space-between;
+    align-items    : center;
+    gap            : 2rem;
 }
 
-.call-us {
+.call-to-action img {
+    display      : block;
     margin-bottom: 1rem;
 }
 
@@ -367,6 +497,10 @@ h1 span {
     align-items: center;
     gap        : 1rem;
     height     : 50px;
+}
+
+.contact-info div {
+    display: none;
 }
 
 .call-us p,
@@ -460,6 +594,12 @@ footer form button {
     height          : 40px;
     width           : 30%;
     font-weight     : 500;
+    cursor          : pointer;
+    transition      : background-color 0.3s ease;
+}
+
+footer form button:hover {
+    background-color: #164e4e;
 }
 
 footer input {
@@ -476,6 +616,10 @@ footer input {
 
 .footer__copyright {
     border-top: 1px solid #000;
+}
+
+.footer__copyright p:last-child {
+    font-size: 1.2rem;
 }
 
 /*-------- MEDIA QUERIES ---------*/
@@ -526,6 +670,11 @@ footer input {
         align-items: center;
         color      : #fff;
         gap        : 1rem;
+        transition : background-color 0.3s ease;
+    }
+
+    .appointment-btn a:hover {
+        background-color: #164e4e;
     }
 
     /* HIDE NAV MOBILE */
@@ -644,6 +793,47 @@ footer input {
         font-size: 1.4rem;
     }
 
+    /*-------- TESTIMONIALS ---------*/
+
+    .testimonials {
+        padding: 3rem 2rem;
+    }
+
+    .testimonial-header {
+        display        : flex;
+        flex-flow      : row nowrap;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    .testimonial-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap                  : 2rem;
+    }
+
+    .testimonial-card {
+        padding  : 1.5rem;
+        max-width: 400px;
+        gap      : 1.2rem;
+    }
+
+    .testimonial-user {
+        gap: 1.2rem;
+    }
+
+    .user-icon {
+        width : 50px;
+        height: 50px;
+    }
+
+    .user-info p {
+        font-size: 1.4rem;
+    }
+
+    .user-info p:last-child {
+        font-size: 1.2rem;
+    }
+
     /*-------- CALL TO ACTION ---------*/
 
     .call-to-action .content-width {
@@ -660,6 +850,10 @@ footer input {
 
     .call-us {
         margin-bottom: 0;
+    }
+
+    .contact-info div {
+        display: block;
     }
 
     .call-us a,
