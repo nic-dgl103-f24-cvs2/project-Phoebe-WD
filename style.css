@@ -206,6 +206,19 @@ footer input {
     font-size: 1.2rem;
 }
 
+/*-------- PAGE TITLES ---------*/
+.services-page h1,
+.team-page h1,
+.facilities-pages h1,
+.contact-page h1 {
+    text-align    : center;
+    text-transform: capitalize;
+    font-size     : 1.6rem;
+    letter-spacing: 1rem;
+    font-weight   : 500;
+    color         : #333;
+}
+
 /*!-------- HOME PAGE ---------*/
 /*-------- BEST SELF ---------*/
 
@@ -625,7 +638,127 @@ footer input {
     color    : #1C5F5F;
 }
 
-/*-------- MEDIA QUERIES ---------*/
+/*!-------- SERVICES PAGE ---------*/
+
+/*-------- CONDITIONS ---------*/
+.conditions-container h2 {
+    font-size     : 3rem;
+    font-weight   : 500;
+    text-transform: capitalize
+}
+
+.conditions-container p {
+    text-align: justify;
+}
+
+.conditions-cards {
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 1.5rem;
+    padding              : 1rem;
+}
+
+.condition-item {
+    border        : 1px solid #DCE6E7;
+    border-radius : 10px;
+    padding       : 1rem;
+    text-align    : center;
+    box-shadow    : 0 2px 4px rgba(0, 0, 0, 0.1);
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    gap           : 1rem;
+    transition    : transform 0.3s ease;
+}
+
+.condition-item:hover {
+    transform : translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.condition-icon {
+    font-size       : 2.5rem;
+    color           : #1C5F5F;
+    background-color: #DCE6E7;
+    border-radius   : 50%;
+    width           : 70px;
+    height          : 70px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.condition-item h3 {
+    font-size: 2.3rem;
+    margin   : 0;
+}
+
+.condition-item p {
+    font-size: 1.4rem;
+    margin   : 0;
+}
+
+/*-------- STEP INTO THE FUTURE ---------*/
+.step-container {
+    margin-bottom: 2rem;
+}
+
+.step-text h2 {
+    font-size  : 3rem;
+    font-weight: 500;
+}
+
+.step-text p {
+    text-align: justify;
+}
+
+.pain-free-cards {
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 2rem;
+}
+
+.pain-free-card {
+    background-color: #f9fafc;
+    border-radius   : 10px;
+    padding         : 1.5rem;
+    box-shadow      : 0 4px 6px rgba(0, 0, 0, 0.1);
+    display         : flex;
+    gap             : 1rem;
+    align-items     : center;
+}
+
+.card-icon {
+    font-size       : 2rem;
+    color           : #fff;
+    background-color: #1C5F5F;
+    border-radius   : 50%;
+    width           : 50px;
+    height          : 50px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-shrink     : 0;
+}
+
+.pain-free-card h3 {
+    font-size  : 1.8rem;
+    font-weight: 600;
+    margin     : 0 0 0.5rem 0;
+}
+
+.pain-free-card p {
+    font-size  : 1.4rem;
+    font-weight: 400;
+    margin     : 0;
+}
+
+/*!-------- TEAM PAGE ---------*/
+/*!-------- FACILITIES & STORIES PAGE ---------*/
+/*!-------- CONTACT US PAGE ---------*/
+
+
+/*!-------- MEDIA QUERIES ---------*/
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
     .content-width {
@@ -880,6 +1013,73 @@ footer input {
     .call-us a,
     .visit-us a {
         font-size: 1.5rem;
+    }
+
+    /*!-------- SERVICES PAGE ---------*/
+    /*-------- CONDITIONS ---------*/
+    .conditions-cards {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        gap                  : 2rem;
+        padding              : 2rem;
+    }
+
+    .conditions-container h2,
+    .conditions-container p {
+        text-align: center;
+    }
+
+    .condition-item {
+        padding: 1.5rem;
+        gap    : 1.2rem;
+    }
+
+    .condition-icon {
+        font-size: 3rem;
+        width    : 90px;
+        height   : 90px;
+    }
+
+    /*-------- STEP INTO THE FUTURE ---------*/
+    .step-container {
+        display        : flex;
+        flex-flow      : row nowrap;
+        align-items    : center;
+        justify-content: space-between;
+        gap            : 2rem;
+    }
+
+    .step-text {
+        width: 50%;
+    }
+
+    .pain-free-cards {
+        flex                 : 1;
+        grid-template-columns: 85%;
+        gap                  : 2rem;
+    }
+
+    .pain-free-card {
+        flex-direction: row;
+        align-items   : center;
+    }
+
+    .pain-free-card:nth-child(2) {
+        position: relative;
+        left    : 4rem;
+    }
+
+    .pain-free-card h3 {
+        font-size: 2.3rem;
+    }
+
+    .pain-free-card p {
+        font-size: 1.4rem;
+    }
+
+    .card-icon {
+        width    : 70px;
+        height   : 70px;
+        font-size: 2.5rem;
     }
 
 }
