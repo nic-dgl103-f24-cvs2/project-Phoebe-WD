@@ -698,7 +698,7 @@ footer input {
     margin   : 0;
 }
 
-/*-------- STEP INTO THE FUTURE ---------*/
+/*-------- STEP INTO THE FUTURE / PAIN-FREE ---------*/
 .step-container {
     margin-bottom: 2rem;
 }
@@ -752,6 +752,55 @@ footer input {
     font-weight: 400;
     margin     : 0;
 }
+
+/*-------- PRICE TABLE ---------*/
+.prices-container {
+    margin-bottom: 2rem;
+}
+
+.prices-container h2 {
+    font-size  : 3rem;
+    font-weight: 500;
+}
+
+table {
+    margin         : auto;
+    table-layout   : fixed;
+    border-collapse: collapse;
+    border         : 1px solid #1C5F5F;
+    width          : 100%;
+    text-align     : center;
+}
+
+table tr,
+table th {
+    border-bottom: 1px solid #1C5F5F;
+}
+
+table th {
+    font-weight: bold;
+    font-size  : 1.8rem;
+}
+
+table td {
+    font-size: 1.6rem;
+}
+
+table td:last-child {
+    font-weight: 600;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #DCE6E7;
+}
+
+
+table td:first-child,
+table th:first-child {
+    border-right: 1px solid #1C5F5F;
+}
+
+
 
 /*!-------- TEAM PAGE ---------*/
 /*!-------- FACILITIES & STORIES PAGE ---------*/
@@ -1080,6 +1129,24 @@ footer input {
         width    : 70px;
         height   : 70px;
         font-size: 2.5rem;
+    }
+
+    /*-------- PRICE TABLE ---------*/
+
+    .prices-container h2 {
+        text-align: center;
+    }
+
+    table {
+        width: 50%;
+    }
+
+    table th {
+        font-size: 2rem;
+    }
+
+    table td {
+        font-size: 1.8rem;
     }
 
 }
