@@ -36,6 +36,13 @@ h6 {
         sans-serif;
 }
 
+input,
+textarea,
+button {
+    font-family: "Open Sans",
+        serif;
+}
+
 ul {
     list-style-type: none;
     margin         : 0;
@@ -925,7 +932,94 @@ table th:first-child {
 }
 
 /*!-------- CONTACT US PAGE ---------*/
+.contact-container,
+.map {
+    margin-bottom: 2rem;
+}
 
+.contact-container h2 {
+    text-transform: capitalize;
+}
+
+.contact-container form {
+    display  : flex;
+    flex-flow: column nowrap;
+    gap      : 1rem;
+}
+
+.contact-container form input,
+textarea {
+    height       : 40px;
+    border-radius: 5px;
+    border       : 1px solid #1C5F5F;
+    padding      : .5rem;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-info__container {
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 1.5rem;
+    margin               : 2rem 0;
+    text-align           : center;
+}
+
+.contact-item {
+    display    : flex;
+    align-items: center;
+    gap        : 1rem;
+    text-align : left;
+}
+
+.contact-icon {
+    background-color: #1C5F5F;
+    color           : white;
+    font-size       : 2rem;
+    border-radius   : 50%;
+    width           : 50px;
+    height          : 50px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.contact-details h3 {
+    margin     : 0;
+    font-size  : 1.6rem;
+    font-weight: 600;
+}
+
+.contact-details a {
+    margin   : 0;
+    font-size: 1.4rem;
+    color    : #000;
+}
+
+.contact-container button {
+    background-color: #1C5F5F;
+    padding         : 1rem;
+    color           : #fff;
+    border          : none;
+    width           : 30%;
+    align-self      : flex-end;
+    border-radius   : 5px;
+    font-weight     : 600;
+    cursor          : pointer;
+    height          : 40px;
+    transition      : background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #164e4e;
+}
+
+.map iframe {
+    height: 400px;
+}
 
 /*!-------- MEDIA QUERIES ---------*/
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
@@ -1321,5 +1415,27 @@ table th:first-child {
 
     .facility-card p {
         font-size: 1.4rem;
+    }
+
+    /*!-------- CONTACT US PAGE ---------*/
+    .contact-container {
+        display  : flex;
+        flex-flow: row nowrap;
+        gap      : 2rem;
+    }
+
+    .contact-information,
+    .contact-container form {
+        width: 50%;
+    }
+
+    .contact-info__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap                  : 2rem;
+    }
+
+    .contact-item {
+        justify-content: start;
+        text-align     : left;
     }
 }
