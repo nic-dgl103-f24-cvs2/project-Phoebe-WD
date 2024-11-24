@@ -4,7 +4,9 @@
 PRIMARY COLOR:  #1C5F5F
 SECUNDARY COLOR: #DCE6E7
 LIGHT BACKGROUND: #f9fafc
-TEXT COLOR: #000
+PRIMARY TEXT COLOR: #000
+SECUNDARY TEXT COLOR: #fff
+TITLES TEXT COLOR: #333
 HOVER COLOR: #164e4e
 */
 
@@ -1026,7 +1028,7 @@ textarea {
 @media only screen and (min-width: 1200px) {
     .content-width {
         width        : 85%;
-        margin-bottom: 2rem;
+        margin-bottom: 15rem;
     }
 
     /*!-------- GENERAL STYLES ---------*/
