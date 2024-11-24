@@ -3,6 +3,7 @@
 /* 
 PRIMARY COLOR:  #1C5F5F
 SECUNDARY COLOR: #DCE6E7
+LIGHT BACKGROUND: #f9fafc
 TEXT COLOR: #000
 HOVER COLOR: #164e4e
 */
@@ -219,6 +220,11 @@ footer input {
     color         : #333;
 }
 
+h2 {
+    font-size  : 3rem;
+    font-weight: 500;
+}
+
 /*!-------- HOME PAGE ---------*/
 /*-------- BEST SELF ---------*/
 
@@ -348,8 +354,6 @@ footer input {
 }
 
 .features__container h2 {
-    font-weight   : 500;
-    font-size     : 3rem;
     text-transform: capitalize;
 }
 
@@ -408,11 +412,6 @@ footer input {
     margin-bottom: 2rem;
 }
 
-.therapy-header h2 {
-    font-size  : 3rem;
-    font-weight: 500;
-}
-
 .therapy-header p {
     text-align: justify;
 }
@@ -469,8 +468,6 @@ footer input {
 }
 
 .testimonial-title h2 {
-    font-size    : 3rem;
-    font-weight  : 500;
     margin-bottom: 0.5rem;
 }
 
@@ -642,8 +639,6 @@ footer input {
 
 /*-------- CONDITIONS ---------*/
 .conditions-container h2 {
-    font-size     : 3rem;
-    font-weight   : 500;
     text-transform: capitalize;
     text-align    : center;
 }
@@ -704,11 +699,6 @@ footer input {
     margin-bottom: 2rem;
 }
 
-.step-text h2 {
-    font-size  : 3rem;
-    font-weight: 500;
-}
-
 .step-text p {
     text-align: justify;
 }
@@ -759,11 +749,6 @@ footer input {
     margin-bottom: 2rem;
 }
 
-.prices-container h2 {
-    font-size  : 3rem;
-    font-weight: 500;
-}
-
 table {
     margin         : auto;
     table-layout   : fixed;
@@ -809,8 +794,6 @@ table th:first-child {
 }
 
 .meet-ourTeam h2 {
-    font-size     : 3rem;
-    font-weight   : 500;
     text-transform: capitalize;
     text-align    : center;
 }
@@ -902,6 +885,45 @@ table th:first-child {
 }
 
 /*!-------- FACILITIES & STORIES PAGE ---------*/
+.equipment iframe {
+    display: block;
+    margin : auto;
+    height : 300px;
+}
+
+.facility-cards {
+    display              : grid;
+    grid-template-columns: 1fr;
+    gap                  : 2rem;
+    margin-top           : 1.5rem;
+}
+
+.facility-card {
+    background-color: #f9fafc;
+    border-radius   : 10px;
+    box-shadow      : 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align      : center;
+    padding         : 1.5rem;
+}
+
+.facility-image img {
+    width        : 100%;
+    border-radius: 10px;
+    max-height   : 200px;
+    object-fit   : cover;
+}
+
+.facility-card h3 {
+    font-size  : 1.8rem;
+    font-weight: 600;
+    margin     : 1rem 0 0.5rem 0;
+}
+
+.facility-card p {
+    font-size  : 1.4rem;
+    font-weight: 400;
+}
+
 /*!-------- CONTACT US PAGE ---------*/
 
 
@@ -1275,5 +1297,29 @@ table th:first-child {
 
     .teamcard-back {
         padding: 1.5rem;
+    }
+
+    /*!-------- FACILITIES & STORIES PAGE ---------*/
+    .equipment h2,
+    .equipment p,
+    .facilities h2 {
+        text-align: center;
+    }
+
+    .equipment iframe {
+        width : 70%;
+        height: 550px;
+    }
+
+    .facility-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .facility-card h3 {
+        font-size: 2.3rem;
+    }
+
+    .facility-card p {
+        font-size: 1.4rem;
     }
 }
