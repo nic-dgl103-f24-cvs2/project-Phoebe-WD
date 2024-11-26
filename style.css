@@ -448,7 +448,7 @@ h2 {
     position        : relative;
     display         : flex;
     flex-direction  : column;
-    justify-content : space-between;
+    justify-content : flex-start;
 }
 
 .service-card h3 {
@@ -458,8 +458,9 @@ h2 {
 }
 
 .service-card p {
-    font-size: 1.4rem;
-    margin   : 0;
+    text-align: justify;
+    font-size : 1.4rem;
+    margin    : 0;
 }
 
 .service-card .icon-circle {
