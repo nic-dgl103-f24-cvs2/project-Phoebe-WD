@@ -135,9 +135,7 @@ header nav ul li a {
 /*-------- FOOTER---------*/
 
 footer {
-    width  : 90%;
-    margin : auto;
-    padding: 1rem;
+    margin: auto;
 }
 
 .logo-footer {
@@ -171,6 +169,7 @@ footer nav p {
 }
 
 footer form {
+    width        : 90%;
     display      : flex;
     flex-flow    : row nowrap;
     align-items  : center;
@@ -209,6 +208,8 @@ footer input {
 }
 
 .footer__copyright {
+    width     : 90%;
+    margin    : auto;
     border-top: 1px solid #000;
 }
 
@@ -259,6 +260,10 @@ h2 {
 .best-self__first-container p {
     font-size : 1.6rem;
     text-align: justify;
+}
+
+.best-self__first-container img {
+    width: 100%;
 }
 
 .consult-buttons {
@@ -319,6 +324,10 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.physio__container img {
+    width: 100%;
+}
+
 /*-------- OUR EXPERT ---------*/
 .our-expert {
     background-color: #DCE6E7;
@@ -354,6 +363,7 @@ h2 {
 .background-experts img {
     position  : relative;
     z-index   : 2;
+    width     : 100%;
     max-width : 100%;
     align-self: flex-end;
 }
@@ -577,10 +587,11 @@ h2 {
     font-weight: 400;
 }
 
-/*!-------- GENERAL CALL TO ACTION (NOT IN CONTACT US PAGE)---------*/
+/*!-------- GENERAL CALL TO ACTION ---------*/
 .call-to-action {
     background-color: #1C5F5F;
     padding         : 2rem 1rem;
+    margin-bottom   : 2rem;
 }
 
 .call-to-action .content-width {
@@ -897,7 +908,9 @@ table th:first-child {
 .equipment iframe {
     display: block;
     margin : auto;
+    width  : 100%;
     height : 300px;
+    border : none;
 }
 
 .facility-cards {
@@ -1020,6 +1033,7 @@ textarea {
 }
 
 .map iframe {
+    width : 100%;
     height: 400px;
 }
 
@@ -1087,9 +1101,13 @@ textarea {
 
     /*-------- FOOTER---------*/
     footer {
-        width  : 85%;
-        margin : auto;
-        padding: 3rem 1rem;
+        /* width  : 85%; */
+        margin    : auto;
+        /* padding: 3rem 1rem; */
+    }
+
+    footer .content-width {
+        margin-bottom: 0;
     }
 
     footer form {
