@@ -89,7 +89,8 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 	  - Our Services
 	  - Our Team
 	  - Facilities & Success Stories
-	  - Make an Appointment (Contact)
+	  - Contact Us
+	  - Make an Appointment (Button)
 
 - **Hero Section**
   - Heading: "Restore your Well-being and Return to Your Best Self"
@@ -230,11 +231,11 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 
 ---
 
-#### Make an Appointment Page
+#### Contact Us Page
 
 - **Header**: Same as on the Home Page
 - **Get in Touch Section**
-  - Heading1: "Make an Appointment"
+  - Heading1: "Contact Us"
   - Heading2: “Get in touch”
   - Paragraph: "Description of contact and more information
   - List of 3 Contact Cards: 
@@ -242,7 +243,6 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 		  - Icon
 		  - Contact Text (phone, email, address)
 		  - Contact Detail (phone number or email address)
-  - Follow Us: Social Icons
   - Contact Form
   - Google Map: Clinic location
 
