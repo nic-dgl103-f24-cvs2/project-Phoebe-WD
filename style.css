@@ -825,7 +825,7 @@ table th:first-child {
 
 .team-cards {
     display              : grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap                  : 1.5rem;
     padding              : 1rem;
 }
@@ -842,7 +842,7 @@ table th:first-child {
     width          : 100%;
     max-width      : 250px;
     height         : 300px;
-    transition     : transform 1.5s;
+    transition     : transform 1s;
     transform-style: preserve-3d;
 }
 
@@ -889,6 +889,7 @@ table th:first-child {
 .teamcard-info {
     text-align: center;
     margin-top: 0.8rem;
+    color     : #323232;
 }
 
 .teamcard-back p {
@@ -916,7 +917,7 @@ table th:first-child {
 
 .facility-cards {
     display              : grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap                  : 2rem;
     margin-top           : 1.5rem;
 }
@@ -1040,7 +1041,7 @@ textarea {
 
 /*!-------- MEDIA QUERIES ---------*/
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
     .content-width {
         width        : 85%;
         margin-bottom: 15rem;
@@ -1074,24 +1075,27 @@ textarea {
     }
 
     .nav-desktop ul li a {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .appointment-btn {
         background-color: #1C5F5F;
         border-radius   : 5px;
+        width           : 234px;
     }
 
     .appointment-btn a {
-        display    : flex;
-        align-items: center;
-        color      : #fff;
-        gap        : 1rem;
-        transition : background-color 0.3s ease;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        color          : #fff;
+        gap            : 1rem;
+        transition     : background-color 0.3s ease;
     }
 
     .appointment-btn a:hover {
         background-color: #164e4e;
+        border-radius   : 5px;
     }
 
     /* HIDE NAV MOBILE */
@@ -1153,7 +1157,7 @@ textarea {
 
     .consult-btn,
     .services-btn {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .consult-buttons,
@@ -1389,9 +1393,8 @@ textarea {
     }
 
     .team-cards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap                  : 2rem;
-        padding              : 2rem;
+        gap    : 2rem;
+        padding: 2rem;
     }
 
     .teamcard-inner {
@@ -1424,10 +1427,6 @@ textarea {
     .equipment iframe {
         width : 70%;
         height: 550px;
-    }
-
-    .facility-cards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .facility-card h3 {
