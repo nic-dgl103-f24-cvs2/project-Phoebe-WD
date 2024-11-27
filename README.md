@@ -86,7 +86,7 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
   - Logo
   - Main Navigation: 
 	  - Home
-	  - Our Services
+	  - Services
 	  - Our Team
 	  - Facilities & Success Stories
 	  - Contact Us
@@ -146,10 +146,10 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 - **Footer**
   - Navigation: 
 	  - Home
-	  - Our Services
+	  - Services
 	  - Our Team
 	  - Facilities & Success Stories
-	  - Make an Appointment (Contact)
+	  - Contact Us
   - External Links: 
 	  - WorkSafeBC
 	  - GGIMS
@@ -160,11 +160,11 @@ Calm and minimalist with a warm, approachable feel. The design should be clean a
 
 ---
 
-#### Our Services Page
+#### Services Page
 
 - **Header**: Same as on the Home Page
 - **Services Section**
-  - Heading1: "Our Services"
+  - Heading1: "Services"
   - Heading2: "Conditions We Can Handle"
   - Paragraph: Descriptions of conditions section
   - List of 6 Condition Cards: 
